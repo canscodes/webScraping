@@ -1,0 +1,132 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{KOCAELİ ÜNİVERSİTESİ BİLGİSAYAR MÜHENDİSLİĞİ
+BÖLÜMÜ YAZILIM LABORATUVARI 1 PROJE 1\\
+{\footnotesize WEB SCRAPING YAPISI VE PYTHON DİLİNDE UYGULANIŞI}
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Yunus Emre Kırcı}
+\IEEEauthorblockA{\textit{Bilgisayar Mühendisliği 2. Öğretim } \\
+200202056 \\
+200202056@kocaeli.edu.tr}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Mustafa Can Öncü}
+\IEEEauthorblockA{\textit{Bilgisayar Mühendisliği 2. Öğretim } \\
+200202100 \\
+2002202100@kocaeli.edu.tr}
+
+}
+
+\maketitle
+
+\section{Projenin Özeti }
+\Large
+Projemizin amacı "Python" dilinde "web scraping" algoritmasının gerçekleştirilmesidir.
+Verilen fonksiyonları gerçekleştirerek ödev isterlerini yerine getirmemiz beklenmektedir.
+Bu fonksiyon isterlerinden ilki input dosyasının "web scraping" yapısına uygunluğunun kontrolüdür.
+Bu isterlerden ikincisi ise kullanıcıdan alınacak olan (txt formatındaki input dosyasının içersine koyarak) sıralamanın gerçekleştirilmesidir
+Bu isterlerden üçüncüsü ise sıralanmış verilerin id, saat, bekleme süresi, istenen iniş süresi gibi özelliklerinin istenen veri yapısı ile istenilen formata sokulmasını sağlamaktadır. Bu yapı hem linked list hem de array ile çözülebilecekken biz array kullanmayı tercih ettik ve tüm projeyi buna göre şekillendirdik.
+Sonuncu fonksiyonumuz ise bizden verilen tüm şartların sonucunu output dosyasına aktarmamızdır.
+Konsol sürekli "enter" tuşu yardımıyla kendini yenilemektedir ve böylece proje tamamlanmaktadır.
+.Raporumuz \LaTeX formatında yazılmıştır.
+
+
+\section{GİRİŞ}
+\Large
+
+\subsection{Asıl projeye ait bilgilerin detaylarına giriş kısmı}
+
+Projenin yazıldığı IDE süreç boyunca farklılık göstermektedir. "VSCODE" ve "PyCharm" temel olarak kullanılan IDE'ler olarak belirlendi. Bunun yanı sıra web üzerinden online editörler de kullanılmıştır. Temel amacımız algoritmayı efektif bir şekilde kurup, bu mantığı konsola aktarma aşamasında başarılı olabilmektir.
+
+\section{TEMEL BİLGİLER}
+\Large
+Projemizde pek çok array yapısı tanımlandı ve kullanıldı. Bu sayede "web scraping" oluşturacağımız yapı mevcut hale geldi. "int eklenecek olanlar urunadi;" fonksiyonunu etkileyecek işlemler yapabilmek için şu fonksiyonları tanımladık:yazdir(), guncelle(), ertele(), add(). 
+Otomatik çalışma sayesinde yukarıda verilen fonksiyonlara erişim sağlanarak kullanıcının isteğine göre çalıştırılması sağlandı.
+\section{YÖNTEMLER}
+\Large
+Projemizde veri yapıları ve algoritmaları dersini baz olarak çeşitli yöntemler uyguladık. Fonksiyonlarımızın hepsi tam olarak çalışmaktadır. Bu sayede istenilen yapı gerçekleşmiştir.
+
+\subsection{Projenin çalışma prensibini gösteren kısım }
+Bu bölümde fonksiyonlar tek tek ele alınacaktır.
+void guncelle():kalkış saatlerinin güncellenmesini sağlar ve "web scraping" yapısını oluşturur. void yazdir():Son olarak artık yazılması gereken verilerini outputa yazdırır.void ertele(int oncelik,int ucakid,int inisaat) girilen verilere göre erteleme işlemini gerçekleştirir.void add(int oncelik,int ucakid,int inissaat): Parantez içinde verilen değerleri alarak ekleme yapmayı sağlayan fonksiyonumuzdur.
+
+
+\section{DENEYSEL SONUÇLAR}
+\Large
+Kullanıcı programı çalıştırdığında input dosyasından çekilmiş tek bir verinin konsol ekranında yazması ile karşılaşmaktadır.
+Priority queue mantığı işlemler tanımlanınca görülebilir.
+Yapılmak istenen işlemlerin yanında numaraların olduğu menü ile karşılaşıyoruz.
+Bu sayede işlemlerin gerçekleşeceği menüyü görüyoruz.
+"ENTER" tuşu ile sonuçları ekrana bastırılır.
+Veriler tam anlamıyla bitince son "enter" programdan çıkışı sağlar.
+
+
+\subsection{Projenin deneysel sonucunu gösteren kısım }
+\section{SONUÇLAR}
+\Large
+\subsection{Projenin sonucunu gösteren kısım }
+
+Projemiz başarılı bir şekilde sonuca ulaştı. Bizden istenen fonksiyonlar istenen yapılar kullanılarak gerçekleştirildi.
+Bu proje sayesinde pythonun yapısını ve web geliştirmenin yapısını çok daha detaylı inceleme ve öğrenme fırsatı bulduk. Bu algoritma yapıları dışında  bir library(kütüphane) dosyası indirerek bunu kodumuza entegre etmeyi başardık.
+Bunun sonucu olarak öncelikli beutifulsoup yapısını for döngüsü yoluyla yapmayı kavradık ve projemizde kullanabildik.
+\section{KAYNAKÇA}
+\large
+\subsection{Projede yararlandığımız kaynaklar}
+\begin{itemize}
+\item www.cs.bham.ac.uk/~jxb/DSA/dsa.pdf
+\item Çölkesen, Rıfat, Veri Yapıları Ve Algoritmaları
+\item https://www.youtube.com/watch?v=aPRqocoBsFQ
+\item https://www.geeksforgeeks.org/advanced-data-structures/
+\item https://medium.com/analytics-vidhya/web-scraping-with-scrapy-and-django-94a77386ac1b
+\item https://www.youtube.com/watch?v=GK2Zl5DG0VM
+\item https://www.youtube.com/watch?v=aUKoTGnzLic
+\item https://www.youtube.com/watch?v=XDxLEUgVDMM
+\end{itemize}
+
+\section{YALANCI KOD}
+\begin{itemize}
+\large
+\item BAŞLA
+\item beutifulsoup library import edilir
+\item siteden rqequest alınır
+\item alınan request değere atanır
+\item atnan değer kullanılarak alınabilen değerler alınır 
+\item alınmayan değerler için link değeri alınır
+\item link değeri için ayrı request oluşturulur
+\item değerlerin html kodda karşılığı aranır
+\item  alınan değerlerin "div" ya da "li" içerisinde olup olmadığına bakılır
+\item class'a göre değerler alınır
+\item  liste ya da table olması durumunda for döngüsü devreye girer
+\item değer if bloğu ile kontrol edilir
+\item cekilen data adi markaya eşitse
+\item degeri markaya atar çağırır
+\item cekilen data adi fiyata eşitse
+\item degeri fiyata atar çağırır
+\item cekilen data adi islemciye eşitse
+\item degeri islemciye atar çağırır
+\item cekilen data adi isletim sistemine eşitse
+\item degeri isletim sistemine atar çağırır
+\item cekilen data adi rame eşitse
+\item degeri rame atar çağırır
+\item Değerler database yazar
+\item Değerler databaseden silinir
+\item Databaseden çıkılır
+\item BİTİR
+\end{itemize}
+\centering
+\includegraphics[width=15cm,height=30cm]{yaz1.png}
+\centering
+\includegraphics[width=15cm,height=30cm]{yaz2.png}
+\centering
+\includegraphics[width=20cm,height=30cm]{yaz3.png}
+\end{document}
